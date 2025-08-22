@@ -25,12 +25,10 @@ Follow these steps to get the chatbot running on your local machine.
 
 ### 1. Prerequisites
 
-* Python 3.8 or higher
+* Python 3.10 or higher
 * An OpenAI API key
 
-### 2. Clone the Repository (Optional)
-
-If you have this project in a git repository, clone it first:
+### 2. Clone the Repository 
 
 ```bash
 git clone https://github.com/TanzirR/langchain_qa_chatbot.git
@@ -78,16 +76,16 @@ Once you have completed the setup, you can run the script from your terminal.
     For example:
 
     ```bash
-    python main.py financial_policy.pdf
+    python main.py ./data/financial_policy.pdf
     ```
 
 2.  **Start Chatting**: The script will process the PDF and display a prompt. You can now ask your questions.
 
     ```
     --- Chatbot is ready! ---
-    Type your question and press Enter. Type 'quit' to exit.
+    Type your question and press Enter. CTRL + C to exit.
 
     Your question: What is the total territory net asset in 2008?
     ```
 
-4.  **Exit the Chatbot**: To end the session, simply type `quit` and press Enter.
+4.  **Exit the Chatbot**: To end the session, simply do CTRL + C in the terminal.
