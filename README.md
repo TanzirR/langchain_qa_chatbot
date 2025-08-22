@@ -4,7 +4,7 @@
 
 This project is a conversational Question-Answering (QA) chatbot. It uses the LangChain framework and OpenAI's language models to read a local PDF document, understand its content, and answer questions about it in an interactive command-line interface.
 
-The chatbot is designed to be "history-aware," meaning it can understand and answer follow-up questions based on the ongoing conversation. It also cites the page numbers from the source PDF where it found the information for its answers.
+The chatbot is designed to be "history-aware," meaning it can understand and answer follow-up questions based on the ongoing conversation. It also cites the page numbers and table figures from the source PDF where it found the information for its answers.
 
 ---
 
