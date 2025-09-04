@@ -7,26 +7,14 @@ from pdf_processing import load_pdf_with_pymupdf, split_pdf_into_chunks
 from retriever import create_pdf_retriever
 from rag_chain import create_rag_chain
 from chat import ask_question
+from utils import load_api_key, validate_pdf_path
 
-# --- Environment Variable Setup ---
-# Load environment variables from a .env file
 def main():
-    load_dotenv()
-    api_key = os.getenv("OPENAI_API_KEY")
-    if not api_key:
-        raise ValueError("OPENAI_API_KEY not found in environment variables. Please set it in your .env file.")
-
-    # --- Check for command-line argument for the PDF file ---
-    if len(sys.argv) < 2:
-        print("Usage: python main.py <path_to_pdf>")
-        sys.exit(1)
-    pdf_path = sys.argv[1]
-
-    print("--- Initializing Chatbot ---")
-    if not os.path.exists(pdf_path):
-        print(f"PDF not found at the specified path: {pdf_path}")
-        sys.exit(1)
-
+   
+    api_key = load_api_key()
+    pdf_path = validate_pdf_path()
+    print("Initializing Chatbot...")
+    
     # -------------------------------
     # 1. PDF Processing → FAISS Vector Store
     # -------------------------------
