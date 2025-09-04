@@ -91,14 +91,16 @@ OPENAI_API_KEY="your_openai_api_key_here"
     ```bash
     uvicorn main:app --reload
     ```
-
-2.  **Access the API Documentation**:
-    Once the server is running, navigate to [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) in your browser to access the interactive Swagger UI documentation.
-
 ---
 
 ## 📖 API Usage
 
+### **Method 1: Access the interactive Swagger UI documentation**:
+
+Once the server is running, navigate to ```http://127.0.0.1:8000/docs``` in the browser
+to access the interactive Swagger UI documentation.
+
+### Method 2: Using ```curl```
 ### 1: Upload a PDF Document
 
 *   **Endpoint**: `POST /upload`
