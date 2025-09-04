@@ -1,10 +1,15 @@
-# LangChain PDF QA Chatbot
+# LangChain PDF QA Chatbot with FastAPI
 
 ## 📝 Description
 
 This project is a conversational Question-Answering (QA) chatbot. It uses the LangChain framework and OpenAI's language models to read a local PDF document, understand its content, and answer questions about it in an interactive command-line interface.
 
 The chatbot is designed to be "history-aware," meaning it can understand and answer follow-up questions based on the ongoing conversation.
+
+---
+```main``` branch contains the LangChain pipeline only.
+
+```rag-fastapi``` branch includes the FastAPI integration.
 
 ---
 
