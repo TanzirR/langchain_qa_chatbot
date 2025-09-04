@@ -72,13 +72,13 @@ Once you have completed the setup, you can run the script from your terminal.
 1.  **Run the script** from your terminal, passing the path to your PDF file as a command-line argument:
 
     ```bash
-    python main.py "path/to/your/document.pdf"
+    python .src/main.py "path/to/your/document.pdf"
     ```
 
     For example:
 
     ```bash
-    python main.py financial_policy.pdf
+    python .src/main.py ./data/financial_policy.pdf
     ```
 
 2.  **Start Chatting**: The script will process the PDF and display a prompt. You can now ask your questions.
