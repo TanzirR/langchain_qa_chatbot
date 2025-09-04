@@ -1,6 +1,8 @@
-python-dotenv
+fastapi
+uvicorn
 langchain
-langchain-community
 langchain-openai
 faiss-cpu
-PyMuPDF
+pymupdf
+pydantic-settings
+python-dotenv
