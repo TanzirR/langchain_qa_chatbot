@@ -4,7 +4,7 @@
 
 This project is a conversational Question-Answering (QA) chatbot. It uses the LangChain framework and OpenAI's language models to read a local PDF document, understand its content, and answer questions about it in an interactive command-line interface.
 
-The chatbot is designed to be "history-aware," meaning it can understand and answer follow-up questions based on the ongoing conversation. It also cites the page numbers from the source PDF where it found the information for its answers.
+The chatbot is designed to be "history-aware," meaning it can understand and answer follow-up questions based on the ongoing conversation.
 
 ---
 
@@ -14,7 +14,6 @@ The chatbot is designed to be "history-aware," meaning it can understand and ans
 * **PDF Processing**: Automatically loads and processes text from any PDF file passed as a command-line argument.
 * **Vector Store**: Creates a searchable vector index of the PDF's content using FAISS for efficient information retrieval.
 * **Conversational Memory**: Remembers the chat history to understand context and answer follow-up questions.
-* **Source Citation**: Identifies and displays the exact page numbers from the PDF that were used to generate an answer.
 * **Modern LangChain**: Built using the latest LangChain Expression Language (LCEL) for robust and efficient chain construction.
 
 ---
@@ -25,7 +24,7 @@ Follow these steps to get the chatbot running on your local machine.
 
 ### 1. Prerequisites
 
-* Python 3.8 or higher
+* Python 3.10 or higher
 * An OpenAI API key
 
 ### 2. Clone the Repository (Optional)
